@@ -71,6 +71,16 @@ For simplicity, Go has integer types that are allocated based on machine archite
 
 For the purposes of this book, integers will always be declared as `int`.
 
+#### Floating point numbers
+
+Floating point numbers are numbers with a decimal component. Floating point numbers are inexact which can cause strange errors when using comparison operators in your programs.
+
+Go has two floating point types: `float32` and `float64`. Unless there are memory concerns, `float64` is generally used. Go also has types for complex numbers `complex64` and `complex128` which are composed of two `float32`s or two `float64`s respectively.
+
+#### Strings
+
+
+
 ### Arrays
 
 TODO: Add content
