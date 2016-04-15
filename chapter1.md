@@ -15,3 +15,4 @@ Find the instructions to install and configure Go on the [official Go website](h
 I will point out that you should ensure that you have set your `GOPATH` environment variable is set to your working directory.
 
 As stated in the introduction, I recommend [GitHub's Atom](https://atom.io/) text editor if you do not already have a preferred text editor.
+
