@@ -25,3 +25,52 @@ If you are looking for a guided tutorial or more detailed documentation, you can
 * [Effective Go](https://golang.org/doc/effective_go.html) <- Guidance on writing idiomatic code and language details
 
 
+## Packages
+
+TODO: Add content
+
+### package main
+
+TODO: Add content
+
+### Importing packages
+
+TODO: Add content
+
+### Installing third-party packages
+
+TODO: Add content
+
+### Writing packages
+
+## Go Tool
+
+TODO: Add content
+
+### go fmt
+
+TODO: Add content
+
+### go doc
+
+TODO: Add content
+
+## Types and data structures
+
+TODO: Add content
+
+### Primitives
+
+TODO: Add content
+
+### Arrays
+
+TODO: Add content
+
+### Slices
+
+TODO: Add content
+
+### Maps
+
+TODO: Add content
