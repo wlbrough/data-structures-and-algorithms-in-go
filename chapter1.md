@@ -79,7 +79,15 @@ Go has two floating point types: `float32` and `float64`. Unless there are memor
 
 #### Strings
 
+Strings are composed of letters and numbers. They can be defined using double quotes `"Go is awesome!"` or backticks ``Go is awesome!``. Strings created with double quotes allow the use of escape characters like `\n` and `\t`, while strings created with backticks allow ignored newlines.
 
+#### Booleans
+
+Booleans are either true or false. There are three logical operators used with booleans:
+
+* `&&` for and
+* `||` for or
+* `!` for not
 
 ### Arrays
 
