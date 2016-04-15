@@ -2,7 +2,7 @@
 
 Written by [Bill Broughton](http://www.billbroughton.me)
 
-**This book is just getting started and doesn't have much (any) content yet. Stay tuned.**
+**This book is just getting started and doesn't have much content yet. Stay tuned.**
 
 Learning data structures and algorithms is the next step in improving programming skills. Sound knowledge of data structures and algorithms will allow you to solve new problems, develop more performant applications, and discover new design paradigms.
 
