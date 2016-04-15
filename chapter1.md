@@ -6,6 +6,8 @@
 
 A team at Google developed Go in 2007 and the language was released publicly in 2009. The language was originally developed as a systems programming language and has syntactic similarity to C-derived languages. While taking some syntax from C, Go also adopted conventions from dynamic languages to make the code easier to read and understand. Simplicity was a stated goal of the project. Go features built in concurrency, a native package manager, and an extensive standard library.
 
+This chapter covers the basics of the language to get started with the material. New pieces of the programming language are introduced as they are needed throughout the text.
+
 ## Getting set up
 
 Find the instructions to install and configure Go on the [official Go website](https://golang.org/doc/install).
