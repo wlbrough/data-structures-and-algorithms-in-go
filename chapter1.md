@@ -80,7 +80,7 @@ import "fmt"
 func main() {
   var one int = 1
   var two int = 2
-  fmt.Println("1 + 2 = ", one + two)
+  fmt.Println("1 + 2 =", one + two)
 }
 ```
 
@@ -89,6 +89,19 @@ func main() {
 Floating point numbers are numbers with a decimal component. Floating point numbers are inexact which can cause strange errors when using comparison operators in your programs.
 
 Go has two floating point types: `float32` and `float64`. Unless there are memory concerns, `float64` is generally used. Go also has types for complex numbers `complex64` and `complex128` which are composed of two `float32`s or two `float64`s respectively.
+
+Example:
+```go
+package main
+
+import "fmt"
+
+func main() {
+  var seven float64 = 7.
+  var twoandahalf float64 = 2.5
+  fmt.Println("7 / 2.5 =", seven / twoandahalf)
+}
+```
 
 #### Strings
 
@@ -101,6 +114,18 @@ Booleans are either true or false and have the type `bool`. There are three logi
 * `&&` for and
 * `||` for or
 * `!` for not
+
+Example:
+```go
+package main
+
+import "fmt"
+
+func main() {
+  var isTrue bool = true
+  fmt.Println("isTrue is", isTrue)
+}
+```
 
 ### Arrays
 
