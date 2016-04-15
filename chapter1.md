@@ -57,11 +57,19 @@ TODO: Add content
 
 ## Types and data structures
 
-TODO: Add content
+Primitive data types and data structures are the basic building blocks in any programming language. Go has a simple - but flexible - type system. Go is statically typed, so once a variable is declared its type cannot be changed.
 
 ### Primitives
 
-TODO: Add content
+Go has integer and floating point number types, a string type, and a boolean type. The number types can be declared with a memory allocation, but it is generally easier to let Go manage the memory allocation.
+
+#### Integers
+
+Integers are numbers without a decimal component or "round numbers". Go integers can be unsigned (i.e. positive only) like `uint8`, `uint16`, `uint32`, or `uint64` or signed (positive or negative) like `int8`, `int16`, `int32`, `int64`. The numbers in those type declarations represent the number of bits allocated for the number.
+
+For simplicity, Go has integer types that are allocated based on machine architecture: `int`, `uint`, and `uintptr`. `int` and `uint` will be either 32 or 64 bits depending on architecture. `uintptr` is an integer pointer.
+
+For the purposes of this book, integers will always be declared as `int`.
 
 ### Arrays
 
