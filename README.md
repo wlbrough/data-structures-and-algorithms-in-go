@@ -4,7 +4,30 @@ Written by [Bill Broughton](http://www.billbroughton.me)
 
 **This book is just getting started and doesn't have much (any) content yet. Stay tuned.**
 
-Every CS student sees a Data Structures and Algorithms book at some point during their education. The defacto language for this text is currently Java. This book re-presents the concepts in Go for the next generation of programmers.
+Learning data structures and algorithms is the next step in improving programming skills. Sound knowledge of data structures and algorithms will allow you to solve new problems, develop more performant applications, and discover new design paradigms.
+
+The learning of data structures and algorithms also happens to be a good vessel for learning key elements of a programming language. That is the key focus of this book. You will learn the [Go programming language](http://golang.org) in conjunction with the concepts presented in the book. 
+
+This book is focused on practical application and will only delve into theoretical foundations as needed to understand the application.
+
+## Who this book is for
+
+This book is best for individuals with some experience in at least one programming language. The basics of the Go programming language will be covered, but the presentation is terse and not all explanations will be easily understood by beginning programmers.
+
+There are problem sets presented at the end of each chapter, however solutions will be publicly available online. This point would exclude the text from being used for formal instruction purposes unless an instructor developed their own problem sets.
+
+## Example code
+
+All code presented in this book is available on [GitHub](https://github.com/wlbrough/data-structures-and-algorithms-in-go-code).
+
+## Technical requirements
+
+The technical requirements to follow this book are simple:
+
+* Go language installed on your computer
+* A text editor
+
+If you are looking for a solid, free text editor with Go language support, I would recommend looking at [GitHub Atom](https://atom.io/).
 
 **Read Online At**:
 
