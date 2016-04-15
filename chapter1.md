@@ -16,3 +16,13 @@ I will point out that you should ensure that you have set your `GOPATH` environm
 
 As stated in the introduction, I recommend [GitHub's Atom](https://atom.io/) text editor if you do not already have a preferred text editor.
 
+## Other resources
+
+If you are looking for a guided tutorial or more detailed documentation, you can find it on the [Go documentation page](https://golang.org/doc/). In particular, check out the following resources:
+
+* [A Tour of Go](https://tour.golang.org/) <- Guided tutorial
+* [How to write Go code](https://golang.org/doc/code.html) <- Quick guidance on building packages, testing, etc.
+* [Effective Go](https://golang.org/doc/effective_go.html) <- Guidance on writing idiomatic code and language details
+
+
+
