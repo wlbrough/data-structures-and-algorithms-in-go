@@ -71,6 +71,19 @@ For simplicity, Go has integer types that are allocated based on machine archite
 
 For the purposes of this book, integers will always be declared as `int`.
 
+Example:
+```go
+package main
+
+import "fmt"
+
+func main() {
+  var one int = 1
+  var two int = 2
+  fmt.Println("1 + 2 = ", one + two)
+}
+```
+
 #### Floating point numbers
 
 Floating point numbers are numbers with a decimal component. Floating point numbers are inexact which can cause strange errors when using comparison operators in your programs.
