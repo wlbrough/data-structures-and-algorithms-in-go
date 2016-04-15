@@ -74,3 +74,28 @@ TODO: Add content
 ### Maps
 
 TODO: Add content
+
+## Control structures
+
+TODO: Add content
+
+## Functions
+
+TODO: Add content
+
+## Scope and closures
+
+TODO: Add content
+
+## Error handling
+
+TODO: Add content
+
+## Structs
+
+TODO: Add content
+
+## Type composition
+
+TODO: Add content
+
