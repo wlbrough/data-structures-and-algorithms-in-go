@@ -24,36 +24,21 @@ If you are looking for a guided tutorial or more detailed documentation, you can
 * [How to write Go code](https://golang.org/doc/code.html) <- Quick guidance on building packages, testing, etc.
 * [Effective Go](https://golang.org/doc/effective_go.html) <- Guidance on writing idiomatic code and language details
 
-
-## Packages
-
-TODO: Add content
-
-### package main
-
-TODO: Add content
-
-### Importing packages
-
-TODO: Add content
-
-### Installing third-party packages
-
-TODO: Add content
-
-### Writing packages
-
 ## Go Tool
 
-TODO: Add content
+Once you have Go installed, you can verify the installation by typing:
 
-### go fmt
+```sh
+go version
+```
 
-TODO: Add content
+The current version is 1.6 at the time I an writing this. You will see a result like the following:
 
-### go doc
+```sh
+go version go1.6 linux/amd64
+```
 
-TODO: Add content
+In addition to the compiler, Go installs a suite of tools under the `go` command. You can see the full listing of commands by running `go help`. 
 
 ## Types and data structures
 
