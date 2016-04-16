@@ -305,7 +305,30 @@ for x := 0; x < 10; x++ {
 
 ## Functions
 
-TODO: Add content
+Functions are declared with the format `func name(arguments) T { ... }`. To tie together previous concepts and present function composition, an example will be followed with explanation.
+
+```go
+package main
+
+import "fmt"
+
+func sum(x []int) int {
+  total := 0
+  for _, v := range x {
+    total += v
+  }
+  return total
+}
+
+func main() {
+  var nums []int{5, 6, 7, 8}
+  fmt.Println(sum(nums)) // Prints 26
+}
+```
+
+The function `sum` takes one argument: a slice containing integers that will be called `x` within the function block. The `int` between the closing parenthesis and the opening curly bracket `) int {` is the return type. This means that the function will send back an integer when it is finished processing.
+
+The syntax in the `for` condition is unfamiliar. The `range` function returns an index and a value for each element in an array, slice, or map. The underscore `_` receives the index, but allows the program to ignore it because it is unused. If a named variable was declared and not used, it would cause a compile error.
 
 ## Error handling
 
