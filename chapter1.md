@@ -114,13 +114,50 @@ func main() {
 
 ### Arrays
 
-TODO: Add content
+Go arrays have a fixed size and a single type. Like most other programming languages, arrays are zero indexed. A new array variable is defined like this:
+
+```go
+var arr [10]string
+```
+
+This creates an array with 10 string elements. An array can also be initialized with an array literal:
+
+```go
+var arr [5]int{ 1, 2, 3, 4, 5 }
+```
+
+Arrays are fixed in size, so trying to add a sixth element to the previously defined `int` array will cause an error:
+
+```go
+arr[5] = 6 //Causes an error at compile time
+```
 
 ### Slices
 
-TODO: Add content
+A slice can be thought of as a dynamic array. Slices have elements of a single type like arrays, but can grow to accommodate new elements. Slices are defined like this:
+
+```go
+var x []int
+```
+
+This creates a 0 length slice that accepts `int` elements. To initialize the slice with a length, but defining no elements, the `make` function is used:
+
+```go
+var x = make([]int, 5)
+```
+
+Slices can also take elements from an array segment:
+
+```go
+var arr = [5]int{ 1, 2, 3, 4, 5 }
+x := arr[2:5] // x == [3, 4, 5]
+```
 
 ### Maps
+
+TODO: Add content
+
+## Variables
 
 TODO: Add content
 
