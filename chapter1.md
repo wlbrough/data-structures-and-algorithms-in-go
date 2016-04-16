@@ -330,6 +330,20 @@ The function `sum` takes one argument: a slice containing integers that will be 
 
 The syntax in the `for` condition is unfamiliar. The `range` function returns an index and a value for each element in an array, slice, or map. The underscore `_` receives the index, but allows the program to ignore it because it is unused. If a named variable was declared and not used, it would cause a compile error.
 
+### Returning multiple values
+
+Functions in go can return multiple values. To receive multiple values, the return type is changed to a comma separated list of types and the `:=` is used in the assignment statement.
+
+```go
+func multVal() (int, int) {
+  return 5, 9
+}
+
+func main() {
+  x, y := multVal()
+}
+```
+
 ## Error handling
 
 TODO: Add content
