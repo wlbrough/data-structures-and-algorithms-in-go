@@ -171,17 +171,61 @@ x := make(map[string]float64)
 
 ## Variables
 
-TODO: Add content
+The section on types and data structues presented two ways to declare a variable: the `var` keyword and the `:=` operator. With the `var` keyword, you must declare the type for the variable. The `:=` operator infers the type based on the value provided, but the type remains fixed after declaration. For example, the following variable declations are equivalent:
+
+```go
+var x int = 7
+x := 7
+```
+
+### Variable naming
+
+Variable names in go must start with a letter and can contain letters, numbers, and the `_` underscore character. In practice, multi-word variable names should be `camelCased` rather than `snake_cased`. Names should be terse, but descriptive.
+
+### Variable scope
+
+According to the Go docs "Go is lexically scoped using blocks". This means that variables declared inside a set of curly braces (`{ }`) cannot be accessed outside of that block. For example:
+
+```go
+package main
+
+import "fmt"
+
+func other() {
+  var x int = 5
+  fmt.Println("x =", x)
+}
+
+func main() {
+  x := 8
+  fmt.Println("x =", x)
+  other()
+}
+```
+
+If you run this program, the output will be:
+
+```sh
+8
+5
+```
+
+`if` and `for` blocks also have their own scope, so variables defined in those blocks will be limited to use inside that block.
+
+### Constants
+
+Constants are immutable variables that are defined with the `const` keyword:
+
+```go
+const message string = "All hail Flying Spaghetti Monster!"
+message = "Hello world!" // Throws compile error
+```
 
 ## Control structures
 
 TODO: Add content
 
 ## Functions
-
-TODO: Add content
-
-## Scope and closures
 
 TODO: Add content
 
