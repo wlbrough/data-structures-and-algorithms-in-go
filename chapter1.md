@@ -223,7 +223,85 @@ message = "Hello world!" // Throws compile error
 
 ## Control structures
 
-TODO: Add content
+A major difference you will notice coming from most other languages is that Go does not use parenthesis around the conditions for control structures. You will see this in practice as each control structure is discussed, but it is important to know that this is not an omission.
+
+### if
+
+`if` takes a condition and runs the code in the block if the condition is true. For example:
+
+```go
+x := 5
+if x == 5 {
+  fmt.Println("x is 5")
+}
+```
+
+If there is also code that should run in the case that the condition is not true, the `else` keyword is used. Modifying the previous example:
+
+```go
+if x == 5 {
+  fmt.Println("x is 5")
+} else {
+  fmt.Println("x is not 5")
+}
+```
+
+If there are more conditions that need to be handled, the `else if` part can be added:
+
+```go
+if x == 5 {
+  fmt.Println("x is 5")
+} else if x == 10 {
+  fmt.Println("x is 10")
+} else {
+  fmt.Println("x is not 5 or 10")
+}
+```
+
+### switch
+
+If there are several `else if` statements in your `if` block, it may be more efficient to use the `switch` statement. To rewrite the last example in the `if` section:
+
+```go
+switch x {
+case 5: fmt.Println("x is 5")
+case 10: fmt.Println("x is 10")
+default: fmt.Println("x is not 5 or 10")
+}
+```
+
+Unlike some other languages, Go switch statements do not "fall through". If a case is matched, the switch statement breaks and the next statement following the switch is executed. This is why there is no `break` statement needed after each case.
+
+### for
+
+`for` is the only looping structure in Go. There is no `while` or `do...while`. These operations are supported using the `for` keyword.
+
+`for` can be declared as an infinite loop:
+
+```go
+for {
+  // ever and ever
+  break // just kidding
+}
+```
+
+`for` can also be used like a `while` in other languages:
+
+```go
+x := 10
+for x > 0 {
+  // do something
+  x--
+}
+```
+
+Finally, `for` can be used in the classical `for` structure:
+
+```go
+for x := 0; x < 10; x++ {
+  // do something
+}
+```
 
 ## Functions
 
