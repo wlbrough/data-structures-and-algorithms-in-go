@@ -90,7 +90,7 @@ func main() {
 
 #### Strings
 
-Strings are composed of letters and numbers and have the type `string`. They can be defined using double quotes `"Go is awesome!"` or backticks ``Go is awesome!``. Strings created with double quotes allow the use of escape characters like `\n` and `\t`, while strings created with backticks allow ignored newlines.
+Strings are composed of letters and numbers and have the type `string`. They can be defined using double quotes `"Go is awesome!"` or backticks ``Go is awesome!``. Strings created with double quotes allow the use of escape characters like `\n` and `\t`, while strings created with backticks allow newlines.
 
 #### Booleans
 
