@@ -155,7 +155,19 @@ x := arr[2:5] // x == [3, 4, 5]
 
 ### Maps
 
-TODO: Add content
+A map is an unordered key-value collection. In other languages this is called an associative array, hash, or dictionary. Maps are declared with the key type and the value type:
+
+```go
+var x map[string]float64
+```
+
+The map `x` has `string`-type keys and `float64`-type values. For example `x["apple"] = 0.99`.
+
+One caveat is that maps must be initialized before they are used, so in practice the above example will be declared as:
+
+```go
+x := make(map[string]float64)
+```
 
 ## Variables
 
