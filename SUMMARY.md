@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Minimum Viable Go](chapter1.md)
-* Arrays
+* [Arrays](chapter2.md)
 
