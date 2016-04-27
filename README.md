@@ -20,6 +20,10 @@ There are problem sets presented at the end of each chapter, however solutions w
 
 All code presented in this book is available on [GitHub](https://github.com/wlbrough/data-structures-and-algorithms-in-go-code).
 
+## Note on computational complexity
+
+Nearly all Data Structures and Algorithms books cover computational complexity at some level of detail. This book does not follow that pattern. Many resources already exist online for learning computational complexity concepts. This book references the complexity of operations, but does not attempt to teach the concepts.
+
 ## Technical requirements
 
 The technical requirements to follow this book are simple:
@@ -28,6 +32,8 @@ The technical requirements to follow this book are simple:
 * A text editor
 
 If you are looking for a solid, free text editor with Go language support, I would recommend looking at [GitHub Atom](https://atom.io/).
+
+## Where to find it
 
 **Read Online At**:
 
