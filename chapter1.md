@@ -352,6 +352,18 @@ TODO: Add content
 
 TODO: Add content
 
+### Initialization
+
+TODO: Add content
+
+### Fields
+
+TODO: Add content
+
+### Methods
+
+TODO: Add content
+
 ## Type composition
 
 TODO: Add content
