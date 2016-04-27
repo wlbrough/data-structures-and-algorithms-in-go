@@ -437,6 +437,17 @@ fmt.Println(me.incrementAge()) // Output: 30
 fmt.Println(me.age) // Output: 30
 ```
 
+The method name is defined between the arguments and the return type. Defining a method like this associates it with the `Person` struct and allows the use of the dot notation. Here's another example for an introduction:
+
+```go
+func (p *Person) introduce() string {
+  fmt.Println("Hi my name is", p.firstName)
+}
+
+me:= Person{"Bill", "Broughton", 29, "Brown", true}
+me.introduce() // Output: "Hi my name is Bill"
+```
+
 ## Type composition
 
 TODO: Add content
