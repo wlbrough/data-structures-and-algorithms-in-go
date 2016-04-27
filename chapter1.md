@@ -346,7 +346,7 @@ func main() {
 
 ## Structs
 
-TODO: Add content
+A struct defines a data object type with a specified collection of fields. Go does not have classes and does not have a `class` keyword, but structs are roughly analogous. Methods are associated to structs rather than being composed within the struct.  
 
 ### Initialization
 
