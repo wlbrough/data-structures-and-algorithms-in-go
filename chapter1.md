@@ -344,10 +344,6 @@ func main() {
 }
 ```
 
-## Error handling
-
-TODO: Add content
-
 ## Structs
 
 TODO: Add content
