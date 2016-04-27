@@ -346,11 +346,45 @@ func main() {
 
 ## Structs
 
-A struct defines a data object type with a specified collection of fields. Go does not have classes and does not have a `class` keyword, but structs are roughly analogous. Methods are associated to structs rather than being composed within the struct.  
+A struct defines a data object type with a specified collection of fields. Go does not have classes and does not have a `class` keyword, but structs are roughly analogous. Methods are associated to structs rather than being composed within the struct. 
+
+As an example, a struct for a person could be defined as:
+
+```go
+type Person struct {
+  firstName string
+  lastName string
+  age integer
+  eyeColor string
+  glasses bool
+}
+```
 
 ### Initialization
 
-TODO: Add content
+There are many ways to create a new instance of the struct. To define the local variable, use:
+
+```go
+var me Person
+```
+
+The alternative form initializes all fields to their zero-value, allocates memory, and returns a pointer:
+
+```go
+me := new(Person)
+```
+
+To define the value for each field at initialization, use this format:
+
+```go
+me:= Person{firstName: "Bill", lastName: "Broughton", age: 29, eyeColor: "Brown", glasses: true}
+```
+
+If the order of the fields is known, the field names can be left out:
+
+```go
+me:= Person{"Bill", "Broughton", 29, "Brown", true}
+```
 
 ### Fields
 
