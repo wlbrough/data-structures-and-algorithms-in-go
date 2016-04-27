@@ -419,12 +419,23 @@ func incrementAge(p *Person) integer {
 
 me:= Person{"Bill", "Broughton", 29, "Brown", true}
 fmt.Println(incrementAge(&me)) // Output: 30
-fmt.Println(me.age) // Output: 29
+fmt.Println(me.age) // Output: 30
 ```
 
 ### Methods
 
-TODO: Add content
+The example above presents a simple use case for a method. Methods are associated with structs rather than composed in the struct. Modifying the function above:
+
+```go
+func (p *Person) incrementAge() integer {
+  p.age++
+  return p.age
+}
+
+me:= Person{"Bill", "Broughton", 29, "Brown", true}
+fmt.Println(me.incrementAge()) // Output: 30
+fmt.Println(me.age) // Output: 30
+```
 
 ## Type composition
 
