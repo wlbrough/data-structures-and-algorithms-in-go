@@ -388,7 +388,39 @@ me:= Person{"Bill", "Broughton", 29, "Brown", true}
 
 ### Fields
 
-TODO: Add content
+Fields are accessed through dot notation.
+
+```go
+fmt.Println(me.firstName, me.lastName) // Output: "Bill Broughton"
+me.lastName = "Smith"
+fmt.Println(me.firstName, me.lastName) // Output: "Bill Smith"
+```
+
+Keep in mind that function arguments are always copied in Go, so functions will not change field values unless the instance is passed as a pointer.
+
+```go
+// Arguments copied
+func incrementAge(p Person) integer {
+  p.age++
+  return p.age
+}
+
+me:= Person{"Bill", "Broughton", 29, "Brown", true}
+fmt.Println(incrementAge(me)) // Output: 30
+fmt.Println(me.age) // Output: 29
+```
+
+```go
+// Arguments copied
+func incrementAge(p *Person) integer {
+  p.age++
+  return p.age
+}
+
+me:= Person{"Bill", "Broughton", 29, "Brown", true}
+fmt.Println(incrementAge(&me)) // Output: 30
+fmt.Println(me.age) // Output: 29
+```
 
 ### Methods
 
