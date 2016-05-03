@@ -448,7 +448,7 @@ me:= Person{"Bill", "Broughton", 29, "Brown", true}
 me.introduce() // Output: "Hi my name is Bill"
 ```
 
-## Type composition
+## Type embedding
 
 TODO: Add content
 
