@@ -450,5 +450,11 @@ me.introduce() // Output: "Hi my name is Bill"
 
 ## Type embedding
 
-TODO: Add content
+Rather than classical inheritance, Go uses embedded types. To demonstrate this concept, we define an `Author` struct that embeds the `Person` type discussed in the prior section.
 
+```go
+type Author struct {
+  Person
+  publishedBooks []string
+}
+```
