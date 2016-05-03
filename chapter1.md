@@ -457,4 +457,23 @@ type Author struct {
   Person
   publishedBooks []string
 }
+
+me := Author{
+  Person: Person{
+    firstName: "Bill",
+    lastName: "Broughton",
+    age: 29,
+    eyeColor: "Brown",
+    glasses: true
+  },
+  publishedBooks: make([]string,1)
+}
+
+// Now properties and methods from Person can be used with Author
+me.incrementAge()
+fmt.Println(me.age) // Output: 30
 ```
+
+## The final word
+
+This is a brief introduction to the Go programming language, but it has covered most of the critical concepts to get started. Additional concepts will be introduced on an as needed basis throughtout the rest of the text.
